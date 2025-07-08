@@ -26,7 +26,7 @@ async function createDeployAnnotation() {
     // Annotation data
     const annotationData = {
       title: `Deploy: ${repoName}`,
-      description: `Commit: ${commitSha.substring(0, 7)} - ${commitMsg}`,
+      description: `🚀 Deploy para produção em ${new Date().toLocaleDateString('pt-BR')} — Commit: ${commitSha.substring(0, 7)} - ${commitMsg}`,
       color: "BLUE",
       annotationDate: {
         year: year,
